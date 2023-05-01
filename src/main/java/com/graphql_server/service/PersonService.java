@@ -2,7 +2,6 @@ package com.graphql_server.service;
 
 import com.graphql_server.dto.GraphqlResponseDto;
 import com.graphql_server.model.Person;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
@@ -11,7 +10,6 @@ import java.util.Arrays;
 import java.util.stream.Collectors;
 
 @Service
-@Slf4j
 public class PersonService {
     @Value("${baseDataUrl}")
     private  String url;
